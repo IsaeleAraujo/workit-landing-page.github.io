@@ -1,63 +1,84 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+:root {
+ --dark-blue: (#24053E);
+ --green: (#44FFA1);
+ --grey: (#584D62);
+ --white: (#FFFFFF);
+
 }
 
 
-.box {
-  background-color: transparent;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  
-}
-
-.box .rectangle-wrapper {
-  border: 0px none;
-  height: 730px;
-  width: 1440px;
-}
-
-.box .rectangle {
-  height: 660px;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 1400px;
-}
-
-.logo {
-    height: 25px;
-    left: 165px;
-    position: fixed;
-    top: 57px;
-    width: 96px;
-}
-
-.circle-group {
-    height: 317px;
-    left: 0;
-    position: fixed;
-    top: 105px;
-    width: 333px;
-}
-
-
-
-.App {
-  text-align: center;
-}
-
-
-.App-header {
-  min-height: 100vh;
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
 }
+
+.box {
+  position: relative;
+  width: 100%; 
+}
+
+.rectangle {
+  height: 660px;
+  width: 1439px;
+}
+
+.logo {
+  position: absolute;
+  top: 57px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.circle-group {
+  width: 80%;
+  max-width: 333px;
+  position: absolute;
+  bottom: 305px;
+
+}
+
+.Data {
+  color: #fff;
+  font-family: 'Fraunces', serif, 600;
+  font-size: 70px;
+  text-align: center;
+  height: 160px;
+  position: absolute;
+  width: 625px;
+  left: 403px;
+  top: 56px;
+}
+
+ .tailored {
+  border-bottom: 3px solid #44ffa1;
+  color: white;
+}
+
+.button {
+  border-style: none;
+  background-color: #44ffa1;
+  font-family: 'Manrope', sans-serif;
+  color: #24053E;
+  font-size: 18px;
+  position: relative;
+  bottom: 375px;
+  left: 669px;
+  height: 61px;
+  width: 161px;
+}
+
+.Apply {
+  border-bottom: 2px solid #44ffa1;
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+  color: #FFFFFF;
+  position: relative;
+  left: 70%; 
+  bottom: 88%;
+ display: inline-block;
+}
+
+
