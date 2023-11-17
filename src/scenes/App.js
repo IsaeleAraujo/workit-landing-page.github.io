@@ -1,8 +1,8 @@
 import React from 'react';
-import './index';
-import Header from './src/scenes/Header';
-import InfoBox from './src/scenes/InfoBox';
-import ContactUs from './src/scenes/ContactUs';
+import './index.js';
+import Header from './Header';
+import InfoBox from './InfoBox';
+import ContactUs from './ContactUs';
 
 function App() {
   return (
